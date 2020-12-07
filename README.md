@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#define numCliente 3
+#define numCliente 1
 #include <locale.h>
 int main()
 {
@@ -105,7 +105,7 @@ int main()
                 }
             break;
         default: break;
-                }}else{
+                }}if(strcmp(tipo_medico[i], "dentista")==0||(strcmp(tipo_medico[i], "Dentista")==0)){
                     printf("Médicos a disposição na area da odontologia: \n");
                     printf("Dr. Yoda|R$46|41 anos|digite 1\n");
                     printf("Dra. Lucimara|R$39|33 anos|digite 2\n");
